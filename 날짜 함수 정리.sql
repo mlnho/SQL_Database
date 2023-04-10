@@ -1,0 +1,25 @@
+--# 날짜 정리해두기!!! to github
+--# 1) 0000년 일주일전 00주차
+SELECT
+TO_CHAR(SYSDATE-7, 'YYYYWW') 
+FROM DUAL
+
+--# 2) 0000년 00주차
+SELECT
+TO_CHAR(SYSDATE, 'YYYYWW')
+FROM DUAL
+
+--# 3) 오늘 날짜로부터 30일전을 0000년00월00일
+SELECT 
+TO_CHAR(SYSDATE-30, 'YYYYMMDD')
+FROM DUAL
+
+--# 4) 오늘 날짜
+SELECT 
+TO_CHAR(SYSDATE, 'YYYYMMDD')
+FROM DUAL
+
+--# 5) 오늘 날짜 하루 전
+SELECT 
+TO_CHAR(SYSDATE-1, 'YYYYMMDD')
+FROM DUAL
